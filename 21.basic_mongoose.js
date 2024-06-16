@@ -11,7 +11,7 @@ const teacherSchema = new mongoose.Schema({
 },{versionKey:false});  //because unnessasorily __v = 0 database ma add taatu tu
 
 const findInDB = async () => {
-  const teacher = mongoose.model("teachers", teacherSchema);
+  const teacher = mongoose.model("teachers", teacherSchema);  
   let data = await teacher.find();
   console.log(data);
 };
